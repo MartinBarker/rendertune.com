@@ -39,12 +39,15 @@
 
   .logo {
     margin-left: 20px;
-    width: 32px;
-    height: 32px;
+    width: 48px; /* Increased size */
+    height: 48px; /* Increased size */
+    padding-right: 20px; /* Added padding */
   }
 
   .badgeContainer {
     margin-top: 10px;
+    display: flex;
+    gap: 10px; /* Added spacing between badges */
   }
 
   .badge {

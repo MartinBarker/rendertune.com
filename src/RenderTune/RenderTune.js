@@ -1,50 +1,90 @@
 import React, { useEffect } from 'react';
 import styles from './RenderTune.module.css';
 import logo from './app.ico';
+import screenshot from './RenderTune_Windows.PNG';
+import linuxLogo from './linux.png';
+import windowsLogo from './windows.png';
+import macLogo from './mac.png';
 
-const Spek = () => {
+const Spek = ({ title }) => {
   useEffect(() => {
     const link = document.createElement('link');
     link.rel = 'icon';
     link.href = logo;
     document.head.appendChild(link);
-  }, []);
+    document.title = title;
+  }, [title]);
 
   return (
     <div className={styles.container}>
-      <h1>Spek – Acoustic Spectrum Analyzer</h1>
       <div className={styles.header}>
-        <p>Spek (IPA: /spɛk/, ‘bacon’ in Dutch) helps to analyze your audio files by showing their spectrogram. Spek is free software available for Unix, Windows and Mac OS X.</p>
         <img src={logo} className={styles.logo} alt="Spek Logo" />
+        <div>
+          <h1>RenderTune - Video Rendering App</h1>
+          <p>Combine audio files + image files into video files. Free and open-source, packaged with FFMPEG, available on the Mac, Windows, and Linux stores.</p>
+        </div>
       </div>
       <div className={styles.badgeContainer}>
         <img src="https://img.shields.io/github/forks/MartinBarker/RenderTune?style=social" alt="GitHub forks" className={styles.badge} />
         <img src="https://img.shields.io/github/stars/MartinBarker/RenderTune?style=social" alt="GitHub stars" className={styles.badge} />
+        <img src="https://img.shields.io/github/v/release/MartinBarker/RenderTune" alt="Latest release" className={styles.badge} />
+        <a href="https://github.com/MartinBarker/RenderTune/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/github/license/MartinBarker/RenderTune" alt="GitHub license" className={styles.badge} />
+        </a>
+        <a href="https://github.com/MartinBarker/RenderTune/releases" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/github/downloads/MartinBarker/RenderTune/total" alt="GitHub downloads" className={styles.badge} />
+        </a>
       </div>
 
       <h2>Features</h2>
       <ul>
-        <li>Supports all popular lossy and lossless audio file formats thanks to the FFmpeg libraries.</li>
-        <li>Ultra-fast signal processing, uses multiple threads to further speed up the analysis.</li>
-        <li>Shows the codec name and the audio signal parameters.</li>
-        <li>Allows to save the spectrogram as an image file.</li>
-        <li>Drag-and-drop support; associates with common audio file formats.</li>
-        <li>Auto-fitting time, frequency and spectral density rulers.</li>
-        <li>Adjustable spectral density range.</li>
-        <li>Translated into 19 languages.</li>
+        <li>Render videos from a single audio file or combine multiple audio files into a specific order.</li>
+        <li>Set the output video resolution and output location.</li>
+        <li>Add black/white padding to the image frame.</li>
+        <li>Drag-and-drop support for easy file selection.</li>
+        <li>Batch render multiple videos at once with customizable options for each video.</li>
+        <li>Track render progress in the "Renders" popup.</li>
+        <li>Supports popular audio formats: mp3, flac, wav, m4a, oog, wma, aiff.</li>
+        <li>Supports popular image formats: png, jpeg, jpg, webp.</li>
+        <li>Output video format: mp4.</li>
       </ul>
 
-      {/* Example of how images might be handled */}
       <h2>Screenshots</h2>
       <div className={styles.screenshotContainer}>
-        <img src="/path/to/image.png" alt="Spek running under Ubuntu Linux" />
-        <img src="/path/to/image.png" alt="Spek running under Windows 7" />
-        <img src="/path/to/image.png" alt="Spek running under Mac OS X" />
+        <img src={screenshot} alt="RenderTune running under Windows" width="200" height="200" />
+        <img src={screenshot} alt="RenderTune running under Windows" width="200" height="200" />
+        <img src={screenshot} alt="RenderTune running under Windows" width="200" height="200" />
       </div>
 
       <h2>Download</h2>
       <div className={styles.downloadContainer}>
-        {/* Details for download links */}
+        <div>
+          <img src={linuxLogo} alt="Linux" width="50" height="50" />
+          <h3>Linux</h3>
+          <ul>
+            <li><a href="https://github.com/martinbarker/rendertune/releases/latest">Linux AppImage: RenderTune-#.#.#.AppImage</a></li>
+            <li><a href="https://github.com/martinbarker/rendertune/releases/latest">Snapcraft</a></li>
+            <li><a href="https://github.com/martinbarker/rendertune/releases/latest">More releases</a></li>
+          </ul>
+        </div>
+        <div>
+          <img src={windowsLogo} alt="Windows" width="50" height="50" />
+          <h3>Windows</h3>
+          <ul>
+            <li><a href="https://github.com/martinbarker/rendertune/releases/latest">Windows Installer (auto-updates): RenderTune-Web-Setup-#.#.#.exe</a></li>
+            <li><a href="https://github.com/martinbarker/rendertune/releases/latest">Windows Portable: RenderTune-#.#.#.exe</a></li>
+            <li><a href="https://github.com/martinbarker/rendertune/releases/latest">More releases</a></li>
+          </ul>
+        </div>
+        <div>
+          <img src={macLogo} alt="Mac" width="50" height="50" />
+          <h3>Mac</h3>
+          <ul>
+            <li><a href="https://github.com/martinbarker/rendertune/releases/latest">Mac OS X Installer (auto-updates): RenderTune-mac.dmg</a></li>
+            <li><a href="https://github.com/martinbarker/rendertune/releases/latest">Mac App Store</a></li>
+            <li><a href="https://github.com/martinbarker/rendertune/releases/latest">More releases</a></li>
+          </ul>
+        </div>
       </div>
 
       <h2>Contribute</h2>
