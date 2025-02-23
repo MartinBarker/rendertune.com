@@ -17,6 +17,10 @@ const Spek = () => {
         <p>Spek (IPA: /spɛk/, ‘bacon’ in Dutch) helps to analyze your audio files by showing their spectrogram. Spek is free software available for Unix, Windows and Mac OS X.</p>
         <img src={logo} className={styles.logo} alt="Spek Logo" />
       </div>
+      <div className={styles.badgeContainer}>
+        <img src="https://img.shields.io/github/forks/MartinBarker/RenderTune?style=social" alt="GitHub forks" className={styles.badge} />
+        <img src="https://img.shields.io/github/stars/MartinBarker/RenderTune?style=social" alt="GitHub stars" className={styles.badge} />
+      </div>
 
       <h2>Features</h2>
       <ul>

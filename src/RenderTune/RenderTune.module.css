@@ -42,3 +42,16 @@
     width: 32px;
     height: 32px;
   }
+
+  .badgeContainer {
+    margin-top: 10px;
+  }
+
+  .badge {
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .badge:hover {
+    background-color: #e0e0e0;
+  }
