@@ -1,0 +1,44 @@
+.container {
+    width: 760px;
+    margin: 20px auto;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 11pt;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 16pt;
+  }
+  
+  h2 {
+    font-size: 12pt;
+  }
+  
+  .screenshotContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .downloadContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .header p {
+    flex: 1;
+  }
+
+  .logo {
+    margin-left: 20px;
+    width: 32px;
+    height: 32px;
+  }
