@@ -7,7 +7,11 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<RenderTune title="RenderTune" />} />
-        {/* Add other routes here */}
+        <Route path="/download" element={<RenderTune title="Download - RenderTune" />} />
+        <Route path="/features" element={<RenderTune title="Features - RenderTune" />} />
+        <Route path="/contribute" element={<RenderTune title="Contribute - RenderTune" />} />
+        <Route path="/support" element={<RenderTune title="Support - RenderTune" />} />
+        <Route path="/help" element={<RenderTune title="Help - RenderTune" />} /> {/* Added "Help" route */}
       </Routes>
     </Router>
   );
