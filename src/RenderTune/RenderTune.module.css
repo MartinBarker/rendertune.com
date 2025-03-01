@@ -138,10 +138,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 40px;
+  padding: 6px 40px;
   background: linear-gradient(135deg, #2d2d2d 0%, #1c1c1c 100%);
   flex-wrap: wrap; /* Added to allow wrapping */
-  gap: 20px; /* Added gap to ensure spacing */
+  gap: 10px; /* Added gap to ensure spacing */
 }
 
 .heroContent {
@@ -260,7 +260,6 @@ body {
 /* Store Badge Styling */
 .storeBadge {
   width: 100px;
-  height: 70px;
   margin: 0 5px;
   transition: transform 0.3s; /* Added transition for smooth effect */
 }

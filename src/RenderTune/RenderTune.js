@@ -6,7 +6,7 @@ import linuxLogo from './linux.png';
 import windowsLogo from './windows.png';
 import macLogo from './mac.png';
 import discordIcon from './discord-icon.svg'; // Add Discord icon image
-import githubIcon from './github-icon.svg'; // Add GitHub icon image
+import githubIcon from './icons8-github.svg'; // Add GitHub icon image
 import macAppStoreBadge from './mac-app-store-badge.svg';
 import msStoreBadge from './ms-store-badge.svg';
 import snapStoreBadge from './snap-store-black.svg';
