@@ -176,13 +176,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 40px;
   background: linear-gradient(135deg, #2d2d2d 0%, #1c1c1c 100%);
   flex-wrap: wrap; /* Added to allow wrapping */
   gap: 10px; /* Added gap to ensure spacing */
 }
 
 .heroContent {
+  margin:30px;
   max-width: 50%;
   flex: 1; /* Added to allow flexible width */
   min-width: 300px; /* Ensure minimum width */
@@ -220,6 +220,9 @@ body {
 }
 
 .downloadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 400px;
   padding: 15px 20px;
@@ -228,7 +231,6 @@ body {
   text-align: center;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 8px;
   border: none;
   font-size: 16px;
   cursor: pointer;
@@ -238,6 +240,12 @@ body {
 .downloadBtn:hover {
   background: linear-gradient(90deg, #6652b0, #3A22B0); /* Updated color */
   transform: scale(1.05);
+}
+
+.osIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 .hidden {
@@ -418,4 +426,11 @@ body {
 .snapStoreBadge {
   background-color: #000; /* Example custom style */
   border-radius: 8px;
+}
+
+.appStoreButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-evenly;
 }

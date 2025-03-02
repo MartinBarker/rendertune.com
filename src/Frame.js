@@ -4,6 +4,9 @@ import styles from './Frame.module.css';
 import logo from './svg/app.ico'; // Ensure the correct path to favicon
 import githubIcon from './svg/icons8-github.svg'; // Ensure correct icon paths
 import discordIcon from './svg/discord-icon.svg'; // Ensure correct icon paths
+import appleIcon from './svg/apple-icon.svg'; // Import Apple icon
+import linuxIcon from './svg/linux-icon.svg'; // Import Linux icon
+import windowsIcon from './svg/windows-icon.svg'; // Import Windows icon
 
 const Frame = ({ title = "RenderTune", children }) => {
   const [menuActive, setMenuActive] = useState(false);
@@ -119,12 +122,15 @@ const DownloadSection = () => {
       {selectedOS === null && (
         <>
           <button className={styles.downloadBtn} onClick={() => handleOSClick('mac')}>
+            <img src={appleIcon} alt="Apple" className={styles.osIcon} />
             Download for macOS
           </button>
           <button className={styles.downloadBtn} onClick={() => handleOSClick('windows')}>
+            <img src={windowsIcon} alt="Windows" className={styles.osIcon} />
             Download for Windows
           </button>
           <button className={styles.downloadBtn} onClick={() => handleOSClick('linux')}>
+            <img src={linuxIcon} alt="Linux" className={styles.osIcon} />
             Download for Linux
           </button>
         </>
@@ -134,9 +140,11 @@ const DownloadSection = () => {
         <>
           <button className={styles.backButton} onClick={resetSelection}>← Back</button>
           <button className={styles.downloadBtn}>
+            <img src={appleIcon} alt="Apple" className={styles.osIcon} />
             Download Intel Mac Version
           </button>
           <button className={styles.downloadBtn}>
+            <img src={appleIcon} alt="Apple" className={styles.osIcon} />
             Download Apple Silicon Version
           </button>
         </>
@@ -146,9 +154,11 @@ const DownloadSection = () => {
         <>
           <button className={styles.backButton} onClick={resetSelection}>← Back</button>
           <button className={styles.downloadBtn}>
+            <img src={windowsIcon} alt="Windows" className={styles.osIcon} />
             Download Windows 64-bit
           </button>
           <button className={styles.downloadBtn}>
+            <img src={windowsIcon} alt="Windows" className={styles.osIcon} />
             Download Windows ARM
           </button>
         </>
@@ -158,9 +168,11 @@ const DownloadSection = () => {
         <>
           <button className={styles.backButton} onClick={resetSelection}>← Back</button>
           <button className={styles.downloadBtn}>
+            <img src={linuxIcon} alt="Linux" className={styles.osIcon} />
             Download Linux AppImage
           </button>
           <button className={styles.downloadBtn}>
+            <img src={linuxIcon} alt="Linux" className={styles.osIcon} />
             Download Linux Tarball
           </button>
         </>

@@ -4,6 +4,9 @@ import screenshot from './images/RenderTune_Windows.PNG';
 import macAppStoreBadge from './svg/mac-app-store-badge.svg';
 import msStoreBadge from './svg/ms-store-badge.svg';
 import snapStoreBadge from './svg/snap-store-black.svg';
+import appleIcon from './svg/apple-icon.svg'; // Import Apple icon
+import linuxIcon from './svg/linux-icon.svg'; // Import Linux icon
+import windowsIcon from './svg/windows-icon.svg'; // Import Windows icon
 
 const Home = () => {
   const [latestVersion, setLatestVersion] = useState('');
@@ -29,26 +32,41 @@ const Home = () => {
           <div className={styles.downloadSection}>
             <h3>Download Latest Release</h3>
             <div className={styles.downloadButtons}>
-              <a href={`https://github.com/MartinBarker/RenderTune/releases/download/${latestVersion}/RenderTune-win-x64.exe`} className={styles.downloadBtn}>Windows</a>
+              <a href={`https://github.com/MartinBarker/RenderTune/releases/download/${latestVersion}/RenderTune-win-x64.exe`} className={styles.downloadBtn}>
+                <img src={windowsIcon} alt="Windows" className={styles.osIcon} />
+                Windows
+              </a>
               {showMacOptions ? (
                 <>
-                  <a href={`https://github.com/MartinBarker/RenderTune/releases/download/${latestVersion}/RenderTune-mac-arm64.dmg`} className={styles.downloadBtn}>macOS (Apple Silicon)</a>
-                  <a href={`https://github.com/MartinBarker/RenderTune/releases/download/${latestVersion}/RenderTune-mac-x64.dmg`} className={styles.downloadBtn}>macOS (Intel)</a>
+                  <a href={`https://github.com/MartinBarker/RenderTune/releases/download/${latestVersion}/RenderTune-mac-arm64.dmg`} className={styles.downloadBtn}>
+                    <img src={appleIcon} alt="Apple" className={styles.osIcon} />
+                    macOS (Apple Silicon)
+                  </a>
+                  <a href={`https://github.com/MartinBarker/RenderTune/releases/download/${latestVersion}/RenderTune-mac-x64.dmg`} className={styles.downloadBtn}>
+                    <img src={appleIcon} alt="Apple" className={styles.osIcon} />
+                    macOS (Intel)
+                  </a>
                 </>
               ) : (
-                <a href="#" className={styles.downloadBtn} onClick={handleMacClick}>macOS</a>
+                <a href="#" className={styles.downloadBtn} onClick={handleMacClick}>
+                  <img src={appleIcon} alt="Apple" className={styles.osIcon} />
+                  macOS
+                </a>
               )}
-              <a href={`https://github.com/MartinBarker/RenderTune/releases/download/${latestVersion}/RenderTune-linux-x86_64.AppImage`} className={styles.downloadBtn}>Linux</a>
+              <a href={`https://github.com/MartinBarker/RenderTune/releases/download/${latestVersion}/RenderTune-linux-x86_64.AppImage`} className={styles.downloadBtn}>
+                <img src={linuxIcon} alt="Linux" className={styles.osIcon} />
+                Linux
+              </a>
             </div>
             <h3>Download from App Stores</h3>
             <div className={styles.appStoreButtons}>
-              <a href="https://apps.apple.com/app/id123456789" target="_blank" rel="noopener noreferrer">
+              <a href="https://apps.apple.com/us/app/rendertune/id1552674375" target="_blank" rel="noopener noreferrer">
                 <img src={macAppStoreBadge} alt="Download on the Mac App Store" className={`${styles.storeBadge} ${styles.macAppStoreBadge}`} />
               </a>
-              <a href="https://www.microsoft.com/store/apps/9NBLGGH4NNS1" target="_blank" rel="noopener noreferrer">
+              <a href="https://apps.microsoft.com/detail/9n5710msppf1" target="_blank" rel="noopener noreferrer">
                 <img src={msStoreBadge} alt="Download from Microsoft Store" className={`${styles.storeBadge} ${styles.msStoreBadge}`} />
               </a>
-              <a href="https://snapcraft.io/render-tune" target="_blank" rel="noopener noreferrer">
+              <a href="https://snapcraft.io/rendertune" target="_blank" rel="noopener noreferrer">
                 <img src={snapStoreBadge} alt="Download from Snap Store" className={`${styles.storeBadge} ${styles.snapStoreBadge}`} />
               </a>
             </div>
