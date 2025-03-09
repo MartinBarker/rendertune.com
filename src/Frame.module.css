@@ -434,3 +434,14 @@ body {
   gap: 15px;
   justify-content: space-evenly;
 }
+
+.custom-link {
+  color: #87CEEB; /* Lighter blue color */
+  text-decoration: none;
+  transition: color 0.3s, cursor 0.3s;
+}
+
+.custom-link:hover {
+  color: #00BFFF; /* Change color on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}

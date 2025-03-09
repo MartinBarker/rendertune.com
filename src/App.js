@@ -9,16 +9,16 @@ const DownloadPage = () => (
       <h2>Download RenderTune</h2>
       <p>Download the latest version of RenderTune for your operating system:</p>
       <ul>
-        <li><a href="https://github.com/MartinBarker/RenderTune/releases/latest">Windows</a></li>
-        <li><a href="https://github.com/MartinBarker/RenderTune/releases/latest">macOS (Intel)</a></li>
-        <li><a href="https://github.com/MartinBarker/RenderTune/releases/latest">macOS (Apple Silicon)</a></li>
-        <li><a href="https://github.com/MartinBarker/RenderTune/releases/latest">Linux</a></li>
+        <li><a href="https://github.com/MartinBarker/RenderTune/releases/latest" className="custom-link">Windows</a></li>
+        <li><a href="https://github.com/MartinBarker/RenderTune/releases/latest" className="custom-link">macOS (Intel)</a></li>
+        <li><a href="https://github.com/MartinBarker/RenderTune/releases/latest" className="custom-link">macOS (Apple Silicon)</a></li>
+        <li><a href="https://github.com/MartinBarker/RenderTune/releases/latest" className="custom-link">Linux</a></li>
       </ul>
       <p>Or download from the app stores:</p>
       <ul>
-        <li><a href="https://apps.apple.com/app/id123456789">Mac App Store</a></li>
-        <li><a href="https://www.microsoft.com/store/apps/9NBLGGH4NNS1">Microsoft Store</a></li>
-        <li><a href="https://snapcraft.io/render-tune">Snap Store</a></li>
+        <li><a href="https://apps.apple.com/app/id123456789" className="custom-link">Mac App Store</a></li>
+        <li><a href="https://www.microsoft.com/store/apps/9NBLGGH4NNS1" className="custom-link">Microsoft Store</a></li>
+        <li><a href="https://snapcraft.io/render-tune" className="custom-link">Snap Store</a></li>
       </ul>
     </div>
   </Frame>
@@ -52,7 +52,7 @@ const ContributePage = () => (
         <li>Push your changes to your forked repository.</li>
         <li>Open a pull request on the main repository.</li>
       </ol>
-      <p>For detailed instructions, please refer to the <a href="https://github.com/MartinBarker/RenderTune">GitHub repository</a>.</p>
+      <p>For detailed instructions, please refer to the <a href="https://github.com/MartinBarker/RenderTune" className="custom-link">GitHub repository</a>.</p>
     </div>
   </Frame>
 );
@@ -63,16 +63,16 @@ const SupportPage = () => (
       <h2>Support RenderTune</h2>
       <p>If you need support, you can reach out to us through the following channels:</p>
       <ul>
-        <li>Email: <a href="mailto:support@rendertune.com">support@rendertune.com</a></li>
-        <li>GitHub Issues: <a href="https://github.com/MartinBarker/RenderTune/issues">Report an issue</a></li>
-        <li>Discord: <a href="https://discord.com/invite/pEAjDjPceY">Join our Discord channel</a></li>
+        <li>Email: <a href="mailto:martinbarker99@gmail.com" className="custom-link">martinbarker99@gmail.com</a></li>
+        <li>GitHub Issues: <a href="https://github.com/MartinBarker/RenderTune/issues" className="custom-link">Report an issue</a></li>
+        <li>Discord: <a href="https://discord.com/invite/pEAjDjPceY" className="custom-link">Join our Discord channel</a></li>
       </ul>
       <h3>Support Us</h3>
       <p>You can support the development of RenderTune through the following platforms:</p>
       <ul>
-        <li><a href="https://ko-fi.com/martinradio">Ko-fi</a></li>
-        <li><a href="https://www.patreon.com/c/martinradio">Patreon</a></li>
-        <li><a href="https://github.com/sponsors/MartinBarker">GitHub Sponsors</a></li>
+        <li><a href="https://ko-fi.com/martinradio" className="custom-link">Ko-fi</a></li>
+        <li><a href="https://www.patreon.com/c/martinradio" className="custom-link">Patreon</a></li>
+        <li><a href="https://github.com/sponsors/MartinBarker" className="custom-link">GitHub Sponsors</a></li>
       </ul>
       <p>Supporters will get their names featured in the app!</p>
     </div>
@@ -85,9 +85,9 @@ const HelpPage = () => (
       <h2>Help and Contact</h2>
       <p>If you need help or have any questions, you can contact us through the following channels:</p>
       <ul>
-        <li>Email: <a href="mailto:support@rendertune.com">support@rendertune.com</a></li>
-        <li>GitHub Issues: <a href="https://github.com/MartinBarker/RenderTune/issues">Report an issue</a></li>
-        <li>Discord: <a href="https://discord.com/invite/pEAjDjPceY">Join our Discord channel</a></li>
+        <li>Email: <a href="mailto:martinbarker99@gmail.com" className="custom-link">martinbarker99@gmail.com</a></li>
+        <li>GitHub Issues: <a href="https://github.com/MartinBarker/RenderTune/issues" className="custom-link">Report an issue</a></li>
+        <li>Discord: <a href="https://discord.com/invite/pEAjDjPceY" className="custom-link">Join our Discord channel</a></li>
       </ul>
       <p>Feel free to ping or message me directly on Discord for any urgent issues.</p>
     </div>

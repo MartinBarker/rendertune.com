@@ -48,10 +48,10 @@ const Home = () => {
                   </a>
                 </>
               ) : (
-                <a href="#" className={styles.downloadBtn} onClick={handleMacClick}>
+                <div className={styles.downloadBtn} onClick={handleMacClick} role="button" tabIndex={0} onKeyPress={handleMacClick}>
                   <img src={appleIcon} alt="Apple" className={styles.osIcon} />
                   macOS
-                </a>
+                </div>
               )}
               <a href={`https://github.com/MartinBarker/RenderTune/releases/download/${latestVersion}/RenderTune-linux-x86_64.AppImage`} className={styles.downloadBtn}>
                 <img src={linuxIcon} alt="Linux" className={styles.osIcon} />
